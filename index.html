@@ -36,12 +36,20 @@
 
       const userDiv = document.createElement('div');
       userDiv.className = 'message user';
+      const timeUser = document.createElement('span');
+      timeUser.className = 'timestamp';
+      timeUser.textContent = new Date().toLocaleTimeString('zh-TW', {hour:'2-digit', minute:'2-digit'});
       userDiv.textContent = text;
+      userDiv.appendChild(timeUser);
       chatBox.appendChild(userDiv);
 
       const botDiv = document.createElement('div');
       botDiv.className = 'message bot';
+      const timeBot = document.createElement('span');
+      timeBot.className = 'timestamp';
+      timeBot.textContent = new Date().toLocaleTimeString('zh-TW', {hour:'2-digit', minute:'2-digit'});
       botDiv.textContent = `你說了「${text}」！`;
+      botDiv.appendChild(timeBot);
       chatBox.appendChild(botDiv);
 
       input.value = '';

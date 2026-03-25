@@ -47,13 +47,13 @@ header .subtitle { font-size: 13px; opacity: 0.85; margin-top: 4px; }
 }
 
 .message.bot {
-  background: #f0f4f8;
-  color: #333;
+  background: #4f8ef7;
+  color: #5e88b1;
   align-self: flex-start;
 }
 
 .message.user {
-  background: #4f8ef7;
+  background: #b92323;
   color: white;
   align-self: flex-end;
 }
@@ -101,3 +101,12 @@ header input {
 }
 header input::placeholder { color: rgba(255,255,255,0.7); }
 .message.hidden { display: none; }
+
+/* feature/add-timestamp 新增 */
+.timestamp {
+  display: block;
+  font-size: 10px;
+  opacity: 0.6;
+  text-align: right;
+  margin-top: 4px;
+}
