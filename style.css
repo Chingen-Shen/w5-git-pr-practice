@@ -47,13 +47,13 @@ header .subtitle { font-size: 13px; opacity: 0.85; margin-top: 4px; }
 }
 
 .message.bot {
-  background: #5e88b1;
-  color: #b92323;
+  background: #4f8ef7;
+  color: #5e88b1;
   align-self: flex-start;
 }
 
 .message.user {
-  background: #cfc879;
+  background: #b92323;
   color: white;
   align-self: flex-end;
 }
